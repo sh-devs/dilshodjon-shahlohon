@@ -154,18 +154,44 @@
 
         .photo-card:nth-child(1) {
             animation-delay: 0.2s;
+            background: url('images/photo_1.jpg');
+            background-size: cover;
+            background-position: center;
         }
 
         .photo-card:nth-child(2) {
             animation-delay: 0.4s;
+            background: url('images/photo_2.jpg');
+            background-size: cover;
+            background-position: center;
         }
 
         .photo-card:nth-child(3) {
             animation-delay: 0.6s;
+            background: url('images/photo_3.jpg');
+            background-size: cover;
+            background-position: center;
         }
 
         .photo-card:nth-child(4) {
             animation-delay: 0.8s;
+            background: url('images/photo_4.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .photo-card:nth-child(5) {
+            animation-delay: 1.0s;
+            background: url('images/photo_5.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .photo-card:nth-child(6) {
+            animation-delay: 1.2s;
+            background: url('images/photo_6.jpg');
+            background-size: cover;
+            background-position: center;
         }
 
         @keyframes fadeInUp {
@@ -474,22 +500,22 @@
     <h2 class="section-title">Дилшодджон & Шахлохон</h2>
     <div class="photo-gallery">
         <div class="photo-card">
-            <div class="photo-placeholder"><img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Фото 1"></div>
+            <div class="photo-placeholder"></div>
         </div>
         <div class="photo-card">
-            <div class="photo-placeholder"><img src="https://images.unsplash.com/photo-1542037104857-ffbb0b9155fb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Фото 2">️</div>
+            <div class="photo-placeholder"></div>
         </div>
         <div class="photo-card">
-            <div class="photo-placeholder"><img src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Фото 3"></div>
+            <div class="photo-placeholder"></div>
         </div>
         <div class="photo-card">
-            <div class="photo-placeholder"><img src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Фото 4"></div>
+            <div class="photo-placeholder"></div>
         </div>
         <div class="photo-card">
-            <div class="photo-placeholder"><img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Фото 5"></div>
+            <div class="photo-placeholder"></div>
         </div>
         <div class="photo-card">
-            <div class="photo-placeholder"><img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Фото 6"></div>
+            <div class="photo-placeholder"></div>
         </div>
     </div>
 </div>
@@ -545,7 +571,7 @@
 </div>
 
 <audio id="backgroundMusic" loop>
-    <source src="https://eu.hitmo-top.com/get/music/20181222/Sam_Smith_-_Fire_On_Fire_61094169.mp3" type="audio/mpeg">
+    <source src="audio/Sam_Smith_-_Fire_On_Fire_61094169.mp3" type="audio/mpeg">
 </audio>
 
 <script>
@@ -586,11 +612,11 @@
     }
 
     // Автозапуск музыки при первом клике
-    document.addEventListener('click', function() {
+    document.addEventListener('click', function () {
         if (!isPlaying) {
             toggleMusic();
         }
-    }, { once: true });
+    }, {once: true});
 
     // Обратный отсчет
     function updateCountdown() {
